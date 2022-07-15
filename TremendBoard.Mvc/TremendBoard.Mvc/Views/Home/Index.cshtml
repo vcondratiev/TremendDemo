@@ -1,0 +1,35 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using TremendBoard.Infrastructure.Data.Models.Identity
+
+@{
+    ViewData["Title"] = "Project Management with Scrum";
+}
+@inject SignInManager<ApplicationUser> SignInManager
+
+<div class="container">
+    <div class="page-header clearfix text-center">
+        <h2>@ViewData["Title"]</h2>
+    </div>
+     <div class="card">
+          <div class="card-header">
+            Scrum Board
+          </div>
+          <div class="card-body">
+            <p class="card-text">View and join projects which belong to you.</p>
+            @{
+                if (SignInManager.IsSignedIn(User))
+                {
+                     <a asp-controller="Project" asp-action="Index" class="btn btn-primary">
+                        View Scrum Board <i class="fas fa-chevron-right"></i>
+                     </a>
+                }
+                else
+                {
+                    <a asp-controller="Account" asp-action="Login" class="btn btn-primary">
+                        Login to Scrum Board <i class="fas fa-chevron-right"></i>
+                     </a>
+                }
+            }
+          </div>
+        </div>
+</div>

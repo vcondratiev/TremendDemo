@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TremendBoard.Mvc", "TremendBoard.Mvc\TremendBoard.Mvc.csproj", "{0EE2DB1C-0DA2-4E96-92C1-8F41BE83FCD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TremendBoard.Infrastructure.Data", "..\TremendBoard.Infrastructure.Data\TremendBoard.Infrastructure.Data.csproj", "{C5BCF8CC-7A58-43DF-A148-C098BD0DA26C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TremendBoard.Infrastructure.Services", "..\TremendBoard.Infrastructure.Services\TremendBoard.Infrastructure.Services.csproj", "{01B9EF33-C1DE-45FA-A03D-75B5076BEE4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{282B2019-2BC6-490F-A6C5-15FFE4830370}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TremendBoard.FunctionalTests", "..\..\tests\TremendBoard.FunctionalTests\TremendBoard.FunctionalTests.csproj", "{F6547A71-5A3D-4018-8333-6E08AF965713}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TremendBoard.UnitTests", "..\..\tests\TremendBoard.UnitTests\TremendBoard.UnitTests.csproj", "{0CB7D227-FE7A-4E26-A8BC-FFD14FD593D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EE2DB1C-0DA2-4E96-92C1-8F41BE83FCD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE2DB1C-0DA2-4E96-92C1-8F41BE83FCD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE2DB1C-0DA2-4E96-92C1-8F41BE83FCD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE2DB1C-0DA2-4E96-92C1-8F41BE83FCD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5BCF8CC-7A58-43DF-A148-C098BD0DA26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5BCF8CC-7A58-43DF-A148-C098BD0DA26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5BCF8CC-7A58-43DF-A148-C098BD0DA26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5BCF8CC-7A58-43DF-A148-C098BD0DA26C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01B9EF33-C1DE-45FA-A03D-75B5076BEE4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B9EF33-C1DE-45FA-A03D-75B5076BEE4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B9EF33-C1DE-45FA-A03D-75B5076BEE4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B9EF33-C1DE-45FA-A03D-75B5076BEE4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6547A71-5A3D-4018-8333-6E08AF965713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6547A71-5A3D-4018-8333-6E08AF965713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6547A71-5A3D-4018-8333-6E08AF965713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6547A71-5A3D-4018-8333-6E08AF965713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CB7D227-FE7A-4E26-A8BC-FFD14FD593D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CB7D227-FE7A-4E26-A8BC-FFD14FD593D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CB7D227-FE7A-4E26-A8BC-FFD14FD593D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CB7D227-FE7A-4E26-A8BC-FFD14FD593D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F6547A71-5A3D-4018-8333-6E08AF965713} = {282B2019-2BC6-490F-A6C5-15FFE4830370}
+		{0CB7D227-FE7A-4E26-A8BC-FFD14FD593D4} = {282B2019-2BC6-490F-A6C5-15FFE4830370}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F3EE2C9-381C-4181-AC1F-07149C429EB0}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using TremendBoard.Infrastructure.Data.Models
+@using TremendBoard.Infrastructure.Data.Models.Identity
+@using TremendBoard.Mvc.Views.Manage
+@inject SignInManager<ApplicationUser> SignInManager
+@{
+    var hasExternalLogins = (await SignInManager.GetExternalAuthenticationSchemesAsync()).Any();
+}
+
+<div class="nav flex-column nav-pills">
+    <a class="nav-link @ManageNavPages.IndexNavClass(ViewContext)" asp-action="Index">Profile</a>
+    <a class="nav-link @ManageNavPages.ChangePasswordNavClass(ViewContext)" asp-action="ChangePassword">Reset Password</a>
+</div>
+
